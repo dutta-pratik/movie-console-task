@@ -19,8 +19,8 @@ class App extends React.Component{
   }
 
   async componentDidMount(){
-    const url = "https://api.themoviedb.org/3/discover/movie?api_key=310cd168feeee489c730aeae47849e33&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=12"
-    // const url = "http://localhost:8000/api/movie/all"
+    // const url = "https://api.themoviedb.org/3/discover/movie?api_key=310cd168feeee489c730aeae47849e33&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=12"
+    const url = "http://localhost:8000/api/movie/all"
     fetch(url)
      .then(response=>response.json())
      .then(data=>
@@ -80,7 +80,7 @@ class App extends React.Component{
               </div>
 
               <div className='list'>
-                <h3 className="head">Drama</h3>
+                <h3 className="head">Horror</h3>
                 <ul className="individual-list">
                 {
                   Horror.map(ele=>

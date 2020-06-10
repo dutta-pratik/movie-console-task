@@ -12,7 +12,7 @@ const MovieSection = (movies) => {
 
             {movie.title}
             <div>
-                <button className='go' onClick={handleClick}>Check Details</button>
+                <button className="go" onClick={handleClick}>Check Details</button>
             </div>
             
         </span>

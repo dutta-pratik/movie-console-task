@@ -4,8 +4,6 @@ import del from "./delete.svg";
 const SingleMovie=(props)=>{
     const {movie,handleSwitchDetails}=props;
     
-    console.log('',movie);
-
     const handleDelteMovie=()=>{
         let url = `http://localhost:8000/api/v1/movie/delete/${movie._id}`;
         // const url = "https://api.themoviedb.org/3/discover/movie?api_key=310cd168feeee489c730aeae47849e33&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=12"
